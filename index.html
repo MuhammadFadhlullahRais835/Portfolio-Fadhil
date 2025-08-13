@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fadhlullah Rais | Welcome to my website</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Muhammad Fadhlullah Rais' Personal Website">
+    <meta name="author" content="Muhammad Fadhlullah Rais">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <meta property="og:title" content="Muhammad Fadhlullah Rais | Web desing and development">
+    <meta property="og:description"
+        content="Muhammad Fadhlullah rais | Web desighner and development. Currently available for work and ready to build your website.">
+    <meta property="og:image" content="https://muhammadfadhlullah.kodein.sch.id/images/children-making-robot.jpg">
+    <meta property="og:url" content="https://muhammadfadhlullah.kodein.sch.id">
+    <meta property="og:type" content="website">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Sidebar Navigation -->
+    <div class="big-overlay close"></div>
+    <nav class="sidebar close">
+        <div class="sticky-wrapper">
+            <div class="top-nav">
+                <div class="logo">
+                    <a href="/Brand"><img src="images/logo.png" alt="Logo"></a>
+                </div>
+                <button class="hamburger" id="menu-toggle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+            </div>
+            <p class="short-bio close">Muhammad Fadhlullah Rais, KODEIN.sch.id student, currently studying interactive
+                website
+                development based in Jakarta, Indonesia.</p>
+            <div class="menu-wrapper close">
+                <ul class="nav-links" id="nav-links">
+                    <a href="#web-development">
+                        <li class="nav-menu"><img src="images/ic-nav-webdev.svg" alt="">
+                            <p>Web Development</p>
+                        </li>
+                    </a>
+                    <a href="#multimedia">
+                        <li class="nav-menu"><img src="images/ic-nav-multimedia.svg" alt="">
+                            <p>Robotic & IoT</p>
+                        </li>
+                    </a>
+                    <a href="#blog">
+                        <li class="nav-menu"><img src="images/ic-nav-blog.svg" alt="">
+                            <p>Blog</p>
+                        </li>
+                    </a>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-slider" id="hero-slider">
+                <div class="slide active">
+                    <div class="hero-content">
+                        <div class="Greeting">
+                            <h1>Hi! I'm Muhammad Fadhlullah Rais, <a href="https://kodein.sch.id"
+                                    target="_blank">KODEIN</a> student and robotics enthusiast currently learning web
+                                development. While I take interest in robotics, I'm also exploring basic web design to
+                                create simple and functional websites.</h1>
+
+                            <a href="#3D-model" class="btn-primary">See my project</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-3d" id="3D-model">
+                <div>
+                    <h2>My first 3D RC Plane model created in Tinkercad</h2>
+                    <p>To achieve long-range capability, this design is the most ideal based on my ideas. However, building it requires strong technical skills—especially when assembling it using limited resources. On top of that, some of the materials cost more than 100 boxed meals from a wedding event.</p>
+                    <p>So for now, it's still a digital prototype, and hasn't made it off the blueprint stage yet.</p>
+                    <a href="https://threejs.org/"><p class="treejs">Curious how I managed to embed a 3D model here?</p></a>
+                </div>
+                <model-viewer src="/modelku.glb" alt="Model pesawat RC" auto-rotate camera-controls shadow-intensity="1"
+                    class="3dviewer">
+                </model-viewer>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="introduction">
+            <div class="intro-text">
+                <p>I'm deeply passionate about robotics and specialize in creating innovative solutions in that field.
+                    While robotics is my main focus, I'm also learning basic web development — aiming to build the
+                    foundation for potentially starting my own tech company in the future.
+                    <br>
+                    See what i've made along my learning:
+                </p>
+            </div>
+            <div class="contact-info">
+                <p>Reach me at</p>
+                <a href="mailto:fadhilrais835@gmail.com" class="link" target="_blank">
+                    <p>fadhilrais835@gmail.com</p>
+                </a>
+                <a href="https://wa.me/6282296850135" class="link" target="_blank">
+                    <p>+62 822-9685-0135</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Robotic Portfolio -->
+        <section class="portfolio" >
+            <div class="section-header">
+                <img src="/images/robotik-icon-new.png" alt="Multimedia Icon">
+                <div>
+                    <h2>Robotik & Iot</h2>
+                    <p>Smart machines, mechanics, and connectivity.</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="portfolio-item" id="webdev-1">
+                    <img src="/images/Robotik & IoT thumb - 1.jpeg" alt="Project Thumbnail">
+                    <h3>First IoT encounter with Fritzing</h3>
+                    <a href="https://fritzing.org/" target="_blank" class="link">
+                        <p>See in browser ↗︎ </p>
+                    </a>
+                </div>
+
+                <div class="portfolio-item" id="webdev-2">
+                    <img src="/images/Robotik & IoT thumb-2.png" alt="Project Thumbnail">
+                    <h3>Controlling my IoT project with Blynk</h3>
+                    <a href="https://blynk.io/" target="_blank" class="link">
+                        <p>See in browser ↗︎ </p>
+                    </a>
+                </div>
+
+                <div class="portfolio-item" id="webdev-3">
+                    <img src="images/robotic-iot-thumb.png" alt="Project Thumbnail">
+                    <h3>Arduino Car using 2.4Ghz Radio module</h3>
+                    <a href="https://www.youtube.com/watch?v=LJac8AmbGr4" target="_blank" class="link">
+                        <p>See in browser ↗︎ </p>
+                    </a>
+                </div>
+
+                <div class="portfolio-item" id="webdev-4">
+                    <img src="images/Robotik & IoT thumb-4.png" alt="Project Thumbnail">
+                    <h3>Another Arduino Project</h3>
+                    <a href="https://circuitdigest.com/article/top-10-best-arduino-projects" target="_blank"
+                        class="link">
+                        <p>See in browser ↗︎ </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Web Development Portfolio -->
+        <section class="portfolio" id="web-development">
+            <div class="section-header">
+                <img src="images/webdev-artwork.png" alt="Web Dev Icon">
+                <div>
+                    <h2>Web Development</h2>
+                    <p>Web development learning journey.</p>
+                </div>
+            </div>
+
+            <div class="grid">
+
+                <div class="portfolio-item" id="webdev-1">
+                    <img src="images/webdev-thumb-1.png" alt="Project Thumbnail">
+                    <h3>Code basic hero section using HTML and CSS</h3>
+                    <a href="https://fadil-tugas9.netlify.app/" target="_blank" class="link">
+                        <p>Live preview ↗︎ </p>
+                    </a>
+                </div>
+
+                <div class="portfolio-item" id="webdev-2">
+                    <img src="images/webdev-thumb-2.png" alt="Project Thumbnail">
+                    <h3>Code for single page-length of a homepage</h3>
+                    <a href="https://fadhlullah-frontend-1.netlify.app/" target="_blank" class="link">
+                        <p>Live preview ↗︎ </p>
+                    </a>
+                </div>
+
+                <div class="portfolio-item" id="webdev-3">
+                    <img src="images/webdev-thumb-3.png" alt="Project Thumbnail">
+                    <h3>Commercial work using HTML and CSS</h3>
+                    <a href="https://fadhlullah-example-1.netlify.app/" target="_blank" class="link">
+                        <p>Live preview ↗︎ </p>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- Blog Section -->
+        <section class="blog" id="blog">
+            <div class="section-header">
+                <img src="images/blog-artwork.png" alt="Blog Icon">
+                <div>
+                    <h2>Blog</h2>
+                    <p>Any experiences while studying</p>
+                </div>
+            </div>
+            <div class="blog-list">
+                <div class="blog-item">
+                    <img src="images/blog-thumb.png" alt="Blog Thumbnail">
+                    <div>
+                        <h3>Room Tour: IoT & Robotics Workspace</h3>
+                        <a href="/Blog" class="link">
+                            <p>Read more ↗︎</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>2025 © Muhammad Fadhlullah Rais</p>
+            <a href="https://www.kodein.sch.id/">
+                <img src="images/logo-kodein-flat.png" alt="">
+                <p><-- My School!</p>
+            </a>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

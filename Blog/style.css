@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Base Styles */
+:root {
+    --bg-light: #80D0FF;
+    --bg-dark: #1f1f1f;
+    --text-dark: #1a1a1a;
+    --text-light: #ffffff;
+    --accent-color: #01A0FF;
+    --accent-dark: #075d8f;
+    --display-font: 'Roboto', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+    font-family: var(--body-font);
+    background-color: white;
+    color: var(--text-dark);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--display-font);
+}
+
+
+p {
+    line-height: 150%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.link {
+    color: var(--accent-color);
+
+    &:hover {
+        color: var(--accent-dark);
+    }
+}
+
+h3 {
+    font-size: 32px;
+}
+
+button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Blog Section */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/path/to/background.png'); /* sesuaikan gambar */
+    font-family: sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center; /* posisi horizontal tengah */
+    align-items: flex-start; /* atau center kalau mau vertikal juga */
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 600px;
+    gap: 10px;
+
+    .home {
+        display: flex;
+        border-radius: 5px;
+        padding: 10px;
+        color: white;
+        background-color: var(--accent-color);
+        width: fit-content;
+    }
+
+    @media screen and (max-width: 768px) {
+        max-width: 400px;
+    }
+}

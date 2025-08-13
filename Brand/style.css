@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Base Styles */
+:root {
+    --bg-light: #80D0FF;
+    --bg-dark: #1f1f1f;
+    --text-dark: #1a1a1a;
+    --text-light: #ffffff;
+    --accent-color: #01A0FF;
+    --accent-dark: #075d8f;
+    --display-font: 'Roboto', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+    font-family: var(--body-font);
+    background-color: white;
+    color: var(--text-dark);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--display-font);
+}
+
+
+p {
+    line-height: 150%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.link {
+    color: var(--accent-color);
+
+    &:hover {
+        color: var(--accent-dark);
+    }
+}
+
+h3 {
+    font-size: 32px;
+}
+
+button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Sidebar */
+.big-overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+
+    &.close {
+        display: none;
+    }
+}
+
+
+.sidebar {
+    background-color: var(--accent-color);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 390px;
+    z-index: 10;
+
+    @media screen and (max-width: 768px) {
+        width: 360px;
+        height: 100vh;
+    }
+
+}
+
+
+.sidebar.close {
+    width: 96px;
+
+    @media screen and (max-width: 768px) {
+        width: 80px;
+    }
+}
+
+.sidebar .logo img {
+    width: 64px;
+    height: auto;
+    border-radius: 8px;
+
+    @media screen and (max-width: 768px) {
+        width: 40px;
+    }
+}
+
+.sticky-wrapper {
+    position: sticky;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.top-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+
+    &.extend {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.short-bio {
+    max-width: 320px;
+
+    &.close {
+        display: none;
+    }
+}
+
+.menu-wrapper {
+    height: 100%;
+    width: 100%;
+
+    img {
+        max-width: 40px;
+    }
+}
+
+.menu-wrapper.close {
+    display: none;
+}
+
+.hamburger {
+
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    div {
+        background: black;
+        height: 4px;
+        width: 32px;
+    }
+
+    &.close {
+        display: none;
+    }
+
+    &.open {
+        div:nth-child(1) {
+            transform-origin: center;
+            transform: rotate(45deg);
+            position: absolute;
+        }
+
+        div:nth-child(2) {
+            opacity: 0;
+        }
+
+        div:nth-child(3) {
+            transform-origin: center;
+            transform: rotate(-45deg);
+            position: absolute;
+        }
+    }
+}
+
+.nav-links {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-links li a {
+    color: var(--text-light);
+    padding: 10px;
+    display: block;
+    text-align: center;
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: var(--accent-color);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 8px;
+
+    &:hover {
+        background-color: rgb(232, 232, 232);
+    }
+}
+/* Brand */
+.wrapper {
+    display: flex;
+    justify-content: center; /* posisi horizontal tengah */
+    align-items: flex-start; /* atau center kalau mau vertikal juga */
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 600px;
+    gap: 10px;
+
+    .home {
+        display: flex;
+        border-radius: 5px;
+        padding: 10px;
+        color: white;
+        background-color: var(--accent-color);
+        width: fit-content;
+    }
+
+    @media screen and (max-width: 768px) {
+        max-width: 400px;
+    }
+}
+
+.logo-explained {
+    background-image: url(/images/logo-explained.jpg);
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    min-height: 480px;
+    min-width: 720px;
+}
